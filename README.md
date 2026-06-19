@@ -28,6 +28,34 @@ python scripts/validate_schema.py
 
 ---
 
+## ⚙️ Installation & Manual Setup Guide
+
+To get KnowledgeOS running, perform the following manual steps:
+
+1. **Obsidian Vault Setup**:
+   - Download and install [Obsidian](https://obsidian.md/).
+   - Open this directory as a new vault in Obsidian.
+2. **Initialize Search Database**:
+   - Ensure Python 3.8+ is installed.
+   - Run the index builder command in your terminal to initialize your local search database (`knowledge_index.db`):
+     ```bash
+     python scripts/rebuild_index.py
+     ```
+3. **Configure Your Ego Node (Self-Model)**:
+   - Open the [People/Self.md](People/Self.md) file in Obsidian.
+   - **Manually update** the templates for your core values, operational rules, heuristics, and anti-goals. The AI Brain references this node to understand your operational style.
+4. **Environment Configuration (Optional Notion Sync)**:
+   - If you want to use the Notion publishing bridge, create a `.env` file at `~/.hermes/.env` (on Unix/macOS) or in your `%LOCALAPPDATA%/hermes/.env` folder (on Windows) and add your integration details:
+     ```env
+     NOTION_API_KEY=your_secret_api_key_here
+     NOTION_DATABASE_ID=your_database_or_wiki_id_here
+     ```
+5. **Run System Checks**:
+   - Run the alignment diagnostic tool: `python scripts/check_alignment.py`
+   - Run the focus analyzer: `python scripts/semantic_drift.py` *(requires at least one Git commit in the vault).*
+
+---
+
 ## 🚀 Quick Start for Humans
 
 | If you want to... | Reference |

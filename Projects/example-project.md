@@ -22,8 +22,8 @@ A one-sentence summary of what this project aims to accomplish.
 - Success metric 2
 
 ## Related Knowledge
-- [[../MOCs/_MOC_Startup|Startup MOC]]
-- [[example-project-thesis|Example Project Thesis]]
+- [Startup MOC](../MOCs/_MOC_Startup.md)
+- [Example Project Thesis](example-project-thesis.md)
 
 ## Next Actions
 - [ ] Define the riskiest assumptions

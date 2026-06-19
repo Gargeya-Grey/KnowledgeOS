@@ -36,6 +36,6 @@ Obsidian is strongest for linked thinking and context. Notion is strongest for d
 The system remains clear: thinking compounds in Obsidian, execution moves in Notion, and Hermes keeps the loop alive.
 
 ## Related Notes
-- [[../MOCs/_MOC_Execution_System|Execution System MOC]]
-- [[refinement-bar-for-notion-publishing|Refinement Bar for Notion Publishing]]
-- [[connect-notion-execution-layer|Connect Notion as Execution Layer]]
+- [Execution System MOC](../MOCs/_MOC_Execution_System.md)
+- [Refinement Bar for Notion Publishing](refinement-bar-for-notion-publishing.md)
+- [Connect Notion as Execution Layer](connect-notion-execution-layer.md)

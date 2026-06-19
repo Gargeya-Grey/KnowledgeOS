@@ -14,8 +14,8 @@ timestamp: 2026-06-19T00:00:00Z
 Operating hub for startup thinking, venture building, and product development.
 
 ## Current Startup Focus
-- *[[../Projects/example-project|Example Project]] — main startup/project hub.*
-- *[[../Projects/example-project-thesis|Example Project Thesis]] — one-page evolving product thesis.*
+- *[Example Project](../Projects/example-project.md) — main startup/project hub.*
+- *[Example Project Thesis](../Projects/example-project-thesis.md) — one-page evolving product thesis.*
 
 ## Current Public Positioning
 - Tagline: *[Your startup tagline here]*

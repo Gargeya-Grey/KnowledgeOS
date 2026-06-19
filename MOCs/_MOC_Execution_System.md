@@ -70,7 +70,7 @@ Hermes should answer: **How do I transform messy knowledge into structured insig
 5. Decide what moves to Notion or becomes an action.
 
 ### Monthly
-1. Use [[../Templates/t-monthly-review|Monthly Review Template]].
+1. Use [Monthly Review Template](../Templates/t-monthly-review.md).
 2. Archive stale projects.
 3. Update startup/product thesis.
 4. Review learning roadmap.
@@ -90,14 +90,14 @@ Inbox / Research / Conversations
 ## Publishing Policy
 - Rough thinking stays in Obsidian.
 - Refined operational notes may publish to Notion.
-- Only publish notes that meet [[../Decisions/refinement-bar-for-notion-publishing|Refinement Bar for Notion Publishing]].
+- Only publish notes that meet [Refinement Bar for Notion Publishing](../Decisions/refinement-bar-for-notion-publishing.md).
 
 ## Dashboards
-- [[_MOC_Master|Master MOC]]
-- [[_MOC_Active|Active Work MOC]]
-- [[_MOC_Startup|Startup MOC]]
-- [[_MOC_KnowledgeOS|KnowledgeOS MOC]]
-- [[_MOC_Experiments|Experiments Dashboard]]
+- [Master MOC](_MOC_Master.md)
+- [Active Work MOC](_MOC_Active.md)
+- [Startup MOC](_MOC_Startup.md)
+- [KnowledgeOS MOC](_MOC_KnowledgeOS.md)
+- [Experiments Dashboard](_MOC_Experiments.md)
 
 ## Open Design Questions
 - Which task manager/database should be the canonical task layer?

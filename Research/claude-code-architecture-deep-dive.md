@@ -91,7 +91,7 @@ Each answers a different integration problem. The ordering is deliberate — pay
 
 ## Sources
 - **Paper:** "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems" — arXiv:2604.14228 (UCL, Apr 2026)
-- **PDF:** [[../Assets/papers/claude-code-design-space-arxiv-2604.14228.pdf|Full Paper PDF]]
+- **PDF:** [Full Paper PDF](../Assets/papers/claude-code-design-space-arxiv-2604.14228.pdf)
 - **Tweet:** [@DailyDoseOfDS_](https://x.com/DailyDoseOfDS_/status/2065728394084626773) (Jun 13, 2026)
 - **Article:** "The Anatomy of an Agent Harness" by Akshay (@akshay_pachaar)
 
@@ -103,4 +103,4 @@ Each answers a different integration problem. The ordering is deliberate — pay
 - What does subagent delegation look like for tutoring vs coding?
 
 ## Related Concepts
-- [[Agent Harness Architecture]]
+- [Agent Harness Architecture](Agent Harness Architecture.md)

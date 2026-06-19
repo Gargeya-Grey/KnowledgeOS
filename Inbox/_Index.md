@@ -26,4 +26,4 @@ Use Inbox for raw capture before classification.
 - Should it be archived after processing?
 
 ## Meeting Notes
-- Use [[../Templates/t-meeting|Meeting Template]].
+- Use [Meeting Template](../Templates/t-meeting.md).

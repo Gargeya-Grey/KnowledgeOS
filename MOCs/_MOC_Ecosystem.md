@@ -14,27 +14,27 @@ timestamp: 2026-06-18T00:00:00Z
 Bridges between domains. Use this to see how startup, learning, systems, and AI research connect.
 
 ## Project Ecosystem
-- Project: [[../Projects/example-project|Example Project]]
-- AI: [[../Concepts/agent-harness-architecture|Agent Harness Architecture]] — [[../Research/claude-code-architecture-deep-dive|Claude Code Architecture Deep Dive]]
-- Startup hub: [[_MOC_Startup|Startup MOC]]
+- Project: [Example Project](../Projects/example-project.md)
+- AI: [Agent Harness Architecture](../Concepts/agent-harness-architecture.md) — [Claude Code Architecture Deep Dive](../Research/claude-code-architecture-deep-dive.md)
+- Startup hub: [Startup MOC](_MOC_Startup.md)
 
 ## Learning Science
-- Learning hub: [[_MOC_Learning|Learning MOC]]
+- Learning hub: [Learning MOC](_MOC_Learning.md)
 - Process grading:
 - Rubrics:
 - Reasoning evaluation:
 
 ## Systems
-- KnowledgeOS hub: [[_MOC_KnowledgeOS|KnowledgeOS MOC]]
-- Notion bridge: [[../Decisions/connect-notion-execution-layer|Notion as Execution Layer]] — API setup, scripts, publish pipeline
-- Role boundaries: [[../Decisions/obsidian-notion-hermes-role-boundaries|Obsidian/Notion/Hermes Boundaries]]
-- Execution system: [[../MOCs/_MOC_Execution_System|Execution System MOC]]
+- KnowledgeOS hub: [KnowledgeOS MOC](_MOC_KnowledgeOS.md)
+- Notion bridge: [Notion as Execution Layer](../Decisions/connect-notion-execution-layer.md) — API setup, scripts, publish pipeline
+- Role boundaries: [Obsidian/Notion/Hermes Boundaries](../Decisions/obsidian-notion-hermes-role-boundaries.md)
+- Execution system: [Execution System MOC](../MOCs/_MOC_Execution_System.md)
 - Second brain:
 - Graph vs vector:
 - Agentic search:
 
 ## Entrepreneurship
-- Startup hub: [[_MOC_Startup|Startup MOC]]
+- Startup hub: [Startup MOC](_MOC_Startup.md)
 - Fundraising:
 - GTM:
 - Product-market fit:

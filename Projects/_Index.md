@@ -12,8 +12,8 @@ timestamp: 2026-06-19T00:00:00Z
 # Projects Index
 
 ## Active Projects
-- [[knowledgeos|KnowledgeOS]] — metadata and automation engine.
-- [[example-project|Example Project]] — template/example project showing how to use the vault.
+- [KnowledgeOS](knowledgeos.md) — metadata and automation engine.
+- [Example Project](example-project.md) — template/example project showing how to use the vault.
 
 ## Project Rules
 - Every active project must have an objective, success criteria/key results, decisions, and next actions.

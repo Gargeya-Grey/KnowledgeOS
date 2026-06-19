@@ -14,10 +14,10 @@ timestamp: 2026-06-18T00:00:00Z
 Decisions are first-class citizens. Log choices that affect strategy, architecture, scope, priority, money, or time.
 
 ## Existing Decisions
-- [[connect-notion-execution-layer|Connect Notion as Execution Layer]]
-- [[refinement-bar-for-notion-publishing|Refinement Bar for Notion Publishing]]
-- [[obsidian-notion-hermes-role-boundaries|Obsidian, Notion, Hermes Role Boundaries]]
-- [[okf-inspired-portable-knowledge-schema|OKF-Inspired Portable Knowledge Schema]]
+- [Connect Notion as Execution Layer](connect-notion-execution-layer.md)
+- [Refinement Bar for Notion Publishing](refinement-bar-for-notion-publishing.md)
+- [Obsidian, Notion, Hermes Role Boundaries](obsidian-notion-hermes-role-boundaries.md)
+- [OKF-Inspired Portable Knowledge Schema](okf-inspired-portable-knowledge-schema.md)
 
 ## Decisions to Make
 - Which landing page message becomes the core narrative.

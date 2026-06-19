@@ -22,7 +22,7 @@ This is a template and example showing how a synthesis or weekly review note sho
 - **Project B**: Needs a decision note regarding database architecture.
 
 ## Decisions Logged
-- [[../../Decisions/example-decision|Example Decision]]
+- [Example Decision](../../Decisions/example-decision.md)
 
 ## Next Steps
 - Action item 1

@@ -63,7 +63,7 @@ publish_to_notion: false
 | `project` | Project/domain this note supports. |
 
 ## Linking Contract
-- Use Obsidian wikilinks for internal relationships: `[[../Projects/example-project|Example Project]]`.
+- Use Obsidian wikilinks for internal relationships: `[Example Project](../Projects/example-project.md)`.
 - Every non-index content note should link to at least one project, MOC, decision, concept, source, or experiment.
 - MOCs are curated navigation; links are the graph; SQLite is a derived index.
 
@@ -89,6 +89,6 @@ python scripts/export_bundle.py --project "Example Project" --out exports/exampl
 This creates a portable markdown bundle plus `manifest.json`.
 
 ## Related Notes
-- [[open-knowledge-format-google-cloud|Open Knowledge Format — Google Cloud Blog]]
-- [[../Decisions/okf-inspired-portable-knowledge-schema|OKF-Inspired Portable Knowledge Schema]]
-- [[../MOCs/_MOC_KnowledgeOS|KnowledgeOS MOC]]
+- [Open Knowledge Format — Google Cloud Blog](open-knowledge-format-google-cloud.md)
+- [OKF-Inspired Portable Knowledge Schema](../Decisions/okf-inspired-portable-knowledge-schema.md)
+- [KnowledgeOS MOC](../MOCs/_MOC_KnowledgeOS.md)

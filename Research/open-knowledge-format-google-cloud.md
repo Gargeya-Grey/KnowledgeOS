@@ -49,7 +49,7 @@ The improvement is to formalize a small portable schema and add validation/expor
 - Add bundle export so domains/projects can be shared as portable markdown bundles.
 
 ## Related Notes
-- [[../MOCs/_MOC_KnowledgeOS|KnowledgeOS MOC]]
-- [[../MOCs/_MOC_Execution_System|Execution System MOC]]
-- [[../Decisions/okf-inspired-portable-knowledge-schema|OKF-Inspired Portable Knowledge Schema]]
-- [[knowledgeos-portable-schema|KnowledgeOS Portable Schema]]
+- [KnowledgeOS MOC](../MOCs/_MOC_KnowledgeOS.md)
+- [Execution System MOC](../MOCs/_MOC_Execution_System.md)
+- [OKF-Inspired Portable Knowledge Schema](../Decisions/okf-inspired-portable-knowledge-schema.md)
+- [KnowledgeOS Portable Schema](knowledgeos-portable-schema.md)

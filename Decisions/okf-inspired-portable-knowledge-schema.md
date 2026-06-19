@@ -44,7 +44,7 @@ Option 3. KnowledgeOS should borrow the portability and interoperability lessons
 - Project/domain bundles can be exported for sharing or migration.
 
 ## Related Notes
-- [[../Research/open-knowledge-format-google-cloud|Open Knowledge Format — Google Cloud Blog]]
-- [[../Research/knowledgeos-portable-schema|KnowledgeOS Portable Schema]]
-- [[../MOCs/_MOC_KnowledgeOS|KnowledgeOS MOC]]
-- [[../MOCs/_MOC_Execution_System|Execution System MOC]]
+- [Open Knowledge Format — Google Cloud Blog](../Research/open-knowledge-format-google-cloud.md)
+- [KnowledgeOS Portable Schema](../Research/knowledgeos-portable-schema.md)
+- [KnowledgeOS MOC](../MOCs/_MOC_KnowledgeOS.md)
+- [Execution System MOC](../MOCs/_MOC_Execution_System.md)

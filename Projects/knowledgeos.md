@@ -33,15 +33,15 @@ The KnowledgeOS has been upgraded through a complete 5-step strategic build:
 - Step 5 (Execution System) — Role boundaries document, execution MOC, operating cadence, decision log.
 
 ## Related Knowledge
-- [[../MOCs/_MOC_KnowledgeOS|KnowledgeOS MOC]]
-- [[../MOCs/_MOC_Execution_System|Execution System MOC]]
-- [[../README|KnowledgeOS README]]
-- [[../MOCs/_MOC_Active|Active Work MOC]]
-- [[../Templates/_Index|Template Index]]
-- [[../Decisions/obsidian-notion-hermes-role-boundaries|Role Boundaries Decision]]
-- [[../Decisions/refinement-bar-for-notion-publishing|Refinement Bar Decision]]
+- [KnowledgeOS MOC](../MOCs/_MOC_KnowledgeOS.md)
+- [Execution System MOC](../MOCs/_MOC_Execution_System.md)
+- [KnowledgeOS README](../README.md)
+- [Active Work MOC](../MOCs/_MOC_Active.md)
+- [Template Index](../Templates/_Index.md)
+- [Role Boundaries Decision](../Decisions/obsidian-notion-hermes-role-boundaries.md)
+- [Refinement Bar Decision](../Decisions/refinement-bar-for-notion-publishing.md)
 
 ## Next Actions
 - Run `python scripts/rebuild_index.py` to index the vault.
-- Review [[../MOCs/_MOC_Experiments|Experiments Dashboard]].
-- Explore templates in [[../Templates/_Index|Templates Index]] to start creating notes.
+- Review [Experiments Dashboard](../MOCs/_MOC_Experiments.md).
+- Explore templates in [Templates Index](../Templates/_Index.md) to start creating notes.

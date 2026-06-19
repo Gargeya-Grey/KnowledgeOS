@@ -19,4 +19,4 @@ Use people notes for collaborators, mentors, customers, investors, users, and im
 ## People Note Rules
 - Capture role, expertise, relationship, context, and follow-ups.
 - Link people to projects, meetings, and decisions where relevant.
-- Use [[../Templates/t-person|Person Template]].
+- Use [Person Template](../Templates/t-person.md).

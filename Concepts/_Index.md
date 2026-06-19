@@ -12,7 +12,7 @@ timestamp: 2026-06-18T00:00:00Z
 # Concepts Index
 
 ## Active Concepts
-- [[agent-harness-architecture|Agent Harness Architecture]] — the operational infrastructure around the AI model loop.
+- [Agent Harness Architecture](agent-harness-architecture.md) — the operational infrastructure around the AI model loop.
 
 ## Concept Rules
 - Concepts should be atomic but connected.

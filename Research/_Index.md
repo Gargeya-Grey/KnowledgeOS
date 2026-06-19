@@ -12,12 +12,12 @@ timestamp: 2026-06-19T00:00:00Z
 # Research Index
 
 ## Active Research
-- [[claude-code-architecture-deep-dive|Claude Code Architecture Deep Dive]] — Deep dive exploration of Claude Code.
-- [[open-knowledge-format-google-cloud|Open Knowledge Format — Google Cloud Blog]] — source note on OKF and portable agent-readable knowledge.
-- [[knowledgeos-portable-schema|KnowledgeOS Portable Schema]] — KnowledgeOS metadata/linking contract inspired by OKF.
+- [Claude Code Architecture Deep Dive](claude-code-architecture-deep-dive.md) — Deep dive exploration of Claude Code.
+- [Open Knowledge Format — Google Cloud Blog](open-knowledge-format-google-cloud.md) — source note on OKF and portable agent-readable knowledge.
+- [KnowledgeOS Portable Schema](knowledgeos-portable-schema.md) — KnowledgeOS metadata/linking contract inspired by OKF.
 
 ## Syntheses
-- [[Synthesis/example-synthesis|Example Synthesis Note]] — template/example weekly synthesis.
+- [Example Synthesis Note](Synthesis/example-synthesis.md) — template/example weekly synthesis.
 
 ## Open Research Questions
 - How should agent harness architecture translate into knowledge systems?

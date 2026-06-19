@@ -14,13 +14,13 @@ timestamp: 2026-06-18T00:00:00Z
 Hub for learning activities, skill acquisition, books, papers, courses, and deliberate practice.
 
 ## Active Learning Tracks
-- AI agents / agent harnesses: [[../Concepts/agent-harness-architecture|Agent Harness Architecture]]
+- AI agents / agent harnesses: [Agent Harness Architecture](../Concepts/agent-harness-architecture.md)
 - Learning science:
 - Entrepreneurship:
 - Product building:
 
 ## Learning Workflow
-1. Capture raw input in [[../Inbox/_Index|Inbox]].
+1. Capture raw input in [Inbox](../Inbox/_Index.md).
 2. Convert it into a `research`, `concept`, or `synthesis` note.
 3. Link it to a project or domain MOC.
 4. Extract decisions, experiments, or next actions.
@@ -28,7 +28,7 @@ Hub for learning activities, skill acquisition, books, papers, courses, and deli
 
 ## Source Types
 - Books:
-- Papers: [[../Assets/papers/claude-code-design-space-arxiv-2604.14228.pdf|Claude Code Design Space Paper]]
+- Papers: [Claude Code Design Space Paper](../Assets/papers/claude-code-design-space-arxiv-2604.14228.pdf)
 - Courses:
 - Conversations:
 - Experiments:

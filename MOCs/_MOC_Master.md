@@ -14,26 +14,26 @@ timestamp: 2026-06-18T00:00:00Z
 This is the root hub. Every note should be reachable from one of these maps.
 
 ## Start Here
-- [[../README|System Overview]]
-- [[_MOC_How_KnowledgeOS_Works|How KnowledgeOS Works]] — beginner-friendly guide to why it is useful and how to use it
-- [[_MOC_Active|Active Work]] — what is happening now
-- [[_MOC_KnowledgeOS|KnowledgeOS System]] — how the AI brain operates
-- [[_MOC_Execution_System|Execution System]] — Obsidian/Notion/Hermes boundaries & operating cadence
+- [System Overview](../README.md)
+- [How KnowledgeOS Works](_MOC_How_KnowledgeOS_Works.md) — beginner-friendly guide to why it is useful and how to use it
+- [Active Work](_MOC_Active.md) — what is happening now
+- [KnowledgeOS System](_MOC_KnowledgeOS.md) — how the AI brain operates
+- [Execution System](_MOC_Execution_System.md) — Obsidian/Notion/Hermes boundaries & operating cadence
 
 ## Domain Hubs
-- [[_MOC_Startup|Startup Hub]]
-- [[_MOC_Learning|Learning]]
-- [[_MOC_Ecosystem|Ecosystem / Cross-Domain Links]]
-- [[_MOC_Experiments|Experiments Dashboard]]
+- [Startup Hub](_MOC_Startup.md)
+- [Learning](_MOC_Learning.md)
+- [Ecosystem / Cross-Domain Links](_MOC_Ecosystem.md)
+- [Experiments Dashboard](_MOC_Experiments.md)
 
 ## By Type
-- Concepts: [[../Concepts/_Index|Concepts Index]]
-- Projects: [[../Projects/_Index|Projects Index]]
-- Research: [[../Research/_Index|Research Index]]
-- Decisions: [[../Decisions/_Index|Decisions Index]]
-- People: [[../People/_Index|People Index]]
-- Inbox & Meetings: [[../Inbox/_Index|Inbox & Meetings]]
-- Templates: [[../Templates/_Index|Template Index]]
+- Concepts: [Concepts Index](../Concepts/_Index.md)
+- Projects: [Projects Index](../Projects/_Index.md)
+- Research: [Research Index](../Research/_Index.md)
+- Decisions: [Decisions Index](../Decisions/_Index.md)
+- People: [People Index](../People/_Index.md)
+- Inbox & Meetings: [Inbox & Meetings](../Inbox/_Index.md)
+- Templates: [Template Index](../Templates/_Index.md)
 
 ## Operating Loop
 ```text
@@ -52,7 +52,7 @@ Capture → Clarify → Connect → Commit → Execute → Review → Synthesize
 | `python scripts/draft_weekly_synthesis.py` | Draft weekly synthesis |
 
 ## Quick Links
-- Latest Decisions: [[../Decisions/_Index|Decisions Index]]
-- Active Projects: [[../Projects/_Index|Projects Index]]
-- Open Questions: [[../Research/_Index|Research Index]]
-- Weekly Review: [[../Templates/t-weekly-review|Weekly Review Template]]
+- Latest Decisions: [Decisions Index](../Decisions/_Index.md)
+- Active Projects: [Projects Index](../Projects/_Index.md)
+- Open Questions: [Research Index](../Research/_Index.md)
+- Weekly Review: [Weekly Review Template](../Templates/t-weekly-review.md)

@@ -14,22 +14,22 @@ timestamp: 2026-06-19T00:00:00Z
 What's happening now.
 
 ## Active Projects
-- [[../Projects/knowledgeos|KnowledgeOS]] — make the AI brain operational.
-- [[../Decisions/connect-notion-execution-layer|Connect Notion as Execution Layer]] — pipeline ready; refined notes can publish to Notion.
+- [KnowledgeOS](../Projects/knowledgeos.md) — make the AI brain operational.
+- [Connect Notion as Execution Layer](../Decisions/connect-notion-execution-layer.md) — pipeline ready; refined notes can publish to Notion.
 
 ## Active Research
-- [[../Research/claude-code-architecture-deep-dive|Claude Code Architecture Deep Dive]] — harness architecture implications.
-- [[../Research/Synthesis/example-synthesis|Example Synthesis Note]] — template/example weekly synthesis.
+- [Claude Code Architecture Deep Dive](../Research/claude-code-architecture-deep-dive.md) — harness architecture implications.
+- [Example Synthesis Note](../Research/Synthesis/example-synthesis.md) — template/example weekly synthesis.
 
 ## Active Experiments
 - *(No active experiments at setup. Create them using the templates in `Templates/`)*
 
 ## Active Domains
-- [[_MOC_Startup|Startup Hub]]
-- [[_MOC_Learning|Learning]]
-- [[_MOC_KnowledgeOS|KnowledgeOS System]]
-- [[_MOC_Execution_System|Execution System]]
-- [[_MOC_Experiments|Experiments Dashboard]]
+- [Startup Hub](_MOC_Startup.md)
+- [Learning](_MOC_Learning.md)
+- [KnowledgeOS System](_MOC_KnowledgeOS.md)
+- [Execution System](_MOC_Execution_System.md)
+- [Experiments Dashboard](_MOC_Experiments.md)
 
 ## Pending Decisions
 - *(No pending decisions. Create decision notes in `Decisions/` to log strategic choices)*

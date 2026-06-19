@@ -47,6 +47,6 @@ The Notion execution layer stays cleaner and higher-signal while KnowledgeOS rem
 _To revisit after several publish cycles._
 
 ## Related Notes
-- [[../README|KnowledgeOS README]]
-- [[connect-notion-execution-layer|Connect Notion as Execution Layer]]
-- [[../Projects/knowledgeos|KnowledgeOS Project]]
+- [KnowledgeOS README](../README.md)
+- [Connect Notion as Execution Layer](connect-notion-execution-layer.md)
+- [KnowledgeOS Project](../Projects/knowledgeos.md)

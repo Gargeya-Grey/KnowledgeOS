@@ -14,41 +14,41 @@ resource:
 # Template Index
 
 ## Core Knowledge Templates
-- [[t-concept|Concept]]
-- [[t-research|Research]]
-- [[t-synthesis|Synthesis]]
-- [[t-source-note|Source Note]]
+- [Concept](t-concept.md)
+- [Research](t-research.md)
+- [Synthesis](t-synthesis.md)
+- [Source Note](t-source-note.md)
 
 ## Startup / Product Templates
-- [[t-startup-idea|Startup Idea]]
-- [[t-product-thesis|Product Thesis]]
-- [[t-product-spec|Product Spec]]
-- [[t-competitor-analysis|Competitor Analysis]]
-- [[t-gtm-experiment|GTM Experiment]]
-- [[t-fundraising-narrative|Fundraising Narrative]]
-- [[t-user-persona|User Persona]]
-- [[t-pilot-plan|Pilot Plan]]
-- [[t-case-study|Case Study]]
-- [[t-customer-discovery|Customer Discovery]]
+- [Startup Idea](t-startup-idea.md)
+- [Product Thesis](t-product-thesis.md)
+- [Product Spec](t-product-spec.md)
+- [Competitor Analysis](t-competitor-analysis.md)
+- [GTM Experiment](t-gtm-experiment.md)
+- [Fundraising Narrative](t-fundraising-narrative.md)
+- [User Persona](t-user-persona.md)
+- [Pilot Plan](t-pilot-plan.md)
+- [Case Study](t-case-study.md)
+- [Customer Discovery](t-customer-discovery.md)
 
 ## Learning Templates
-- [[t-book-note|Book Note]]
-- [[t-paper-note|Paper Note]]
-- [[t-learning-roadmap|Learning Roadmap]]
-- [[t-practice-log|Practice Log]]
+- [Book Note](t-book-note.md)
+- [Paper Note](t-paper-note.md)
+- [Learning Roadmap](t-learning-roadmap.md)
+- [Practice Log](t-practice-log.md)
 
 ## Execution Templates
-- [[t-project|Project]]
-- [[t-decision|Decision]]
-- [[t-experiment|Experiment]]
-- [[t-meeting|Meeting]]
-- [[t-weekly-review|Weekly Review]]
-- [[t-monthly-review|Monthly Review]]
-- [[t-sop|SOP / Process]]
-- [[t-person|Person]]
+- [Project](t-project.md)
+- [Decision](t-decision.md)
+- [Experiment](t-experiment.md)
+- [Meeting](t-meeting.md)
+- [Weekly Review](t-weekly-review.md)
+- [Monthly Review](t-monthly-review.md)
+- [SOP / Process](t-sop.md)
+- [Person](t-person.md)
 
 ## Template Rule
 Templates are scaffolds only. They should not be counted as active KnowledgeOS content in weekly metrics.
 
 ## Metadata Standard
-- [[../Research/knowledgeos-portable-schema|KnowledgeOS Portable Schema]] — portable frontmatter contract for new notes.
+- [KnowledgeOS Portable Schema](../Research/knowledgeos-portable-schema.md) — portable frontmatter contract for new notes.

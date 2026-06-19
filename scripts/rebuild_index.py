@@ -12,6 +12,7 @@ VAULT_DIR = Path(__file__).resolve().parent.parent
 DB = VAULT_DIR / "knowledge_index.db"
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.S)
 WIKILINK_RE = re.compile(r"\[\[([^\]]+)\]\]")
+MARKDOWN_LINK_RE = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
 
 def parse_frontmatter(text: str) -> dict:
     m = FRONTMATTER_RE.match(text)
@@ -127,7 +128,14 @@ def main():
           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
           (title, rel, typ, tags, project, status, created, updated, description, resource, timestamp, schema))
         note_count += 1
-        for raw in sorted(set(WIKILINK_RE.findall(text))):
+        raw_links = []
+        for raw in WIKILINK_RE.findall(text):
+            raw_links.append(raw)
+        for raw in MARKDOWN_LINK_RE.findall(text):
+            # Skip external web and mail links, and internal headers
+            if not raw.startswith(("http://", "https://", "mailto:", "ftp:", "#")):
+                raw_links.append(raw)
+        for raw in sorted(set(raw_links)):
             dest = normalize_link(raw, rel, lookup)
             cur.execute("INSERT INTO links (source, destination, raw_destination) VALUES (?, ?, ?)", (rel, dest, raw))
             link_count += 1

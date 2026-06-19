@@ -32,11 +32,11 @@ python scripts/validate_schema.py
 
 | If you want to... | Reference |
 |---|---|
-| Learn the system from scratch | [[MOCs/_MOC_How_KnowledgeOS_Works\|How KnowledgeOS Works]] |
-| See what's active now | [[MOCs/_MOC_Active\|Active Work MOC]] |
-| Navigate the master graph | [[MOCs/_MOC_Master\|Master MOC]] |
-| Explore note templates | [[Templates/_Index\|Template Index]] |
-| View active experiments | [[MOCs/_MOC_Experiments\|Experiments Dashboard]] |
+| Learn the system from scratch | [How KnowledgeOS Works](MOCs/_MOC_How_KnowledgeOS_Works.md) |
+| See what's active now | [Active Work MOC](MOCs/_MOC_Active.md) |
+| Navigate the master graph | [Master MOC](MOCs/_MOC_Master.md) |
+| Explore note templates | [Template Index](Templates/_Index.md) |
+| View active experiments | [Experiments Dashboard](MOCs/_MOC_Experiments.md) |
 
 ---
 

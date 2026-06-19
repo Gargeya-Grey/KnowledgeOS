@@ -63,7 +63,7 @@ publish_to_notion: false
 | `project` | Project/domain this note supports. |
 
 ## Linking Contract
-- Use Obsidian wikilinks for internal relationships: `[Example Project](../Projects/example-project.md)`.
+- Use standard relative Markdown links for internal relationships: `[Example Project](../Projects/example-project.md)`.
 - Every non-index content note should link to at least one project, MOC, decision, concept, source, or experiment.
 - MOCs are curated navigation; links are the graph; SQLite is a derived index.
 

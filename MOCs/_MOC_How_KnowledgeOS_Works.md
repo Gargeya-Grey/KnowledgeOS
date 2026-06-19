@@ -159,6 +159,7 @@ Scripts keep the vault operational:
 
 | Script | Use |
 |---|---|
+| `onboarding.py` | Interactive CLI wizard to initialize/configure your Ego Node (Self.md) |
 | `rebuild_index.py` | Rebuilds the SQLite search/graph index |
 | `search.py` | Searches titles, tags, projects, and linked notes |
 | `weekly_data.py` | Produces weekly metrics |

@@ -49,6 +49,7 @@ Capture → Clarify → Connect → Commit → Execute → Review → Synthesize
 ## Automation
 | Script | Purpose |
 |---|---|
+| `python scripts/onboarding.py` | Run the cognitive onboarding wizard |
 | `python scripts/rebuild_index.py` | Refresh SQLite index |
 | `python scripts/search.py <query>` | Search notes/tags/projects/links |
 | `python scripts/weekly_data.py` | JSON weekly summary |

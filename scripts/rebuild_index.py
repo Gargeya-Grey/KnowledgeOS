@@ -5,7 +5,7 @@ Indexes markdown notes, frontmatter, and wiki links. Link targets are stored in 
 form and normalized to best-effort vault-relative markdown paths when possible.
 """
 from __future__ import annotations
-import os, re, sqlite3, sys
+import hashlib, os, re, sqlite3, sys
 from pathlib import Path
 
 VAULT_DIR = Path(__file__).resolve().parent.parent
@@ -87,7 +87,7 @@ def main():
       resource TEXT,
       timestamp TEXT,
       schema TEXT,
-      mtime REAL
+      file_hash TEXT
     );
     CREATE TABLE IF NOT EXISTS links (
       id INTEGER PRIMARY KEY,
@@ -106,11 +106,11 @@ def main():
     for col in ["description", "resource", "timestamp", "schema"]:
         if col not in note_cols:
             cur.execute(f"ALTER TABLE notes ADD COLUMN {col} TEXT")
-    if "mtime" not in note_cols:
-        cur.execute("ALTER TABLE notes ADD COLUMN mtime REAL")
+    if "file_hash" not in note_cols:
+        cur.execute("ALTER TABLE notes ADD COLUMN file_hash TEXT")
 
     # Load existing notes to perform incremental updates
-    db_notes = {r[0]: r[1] for r in cur.execute("SELECT path, mtime FROM notes").fetchall()}
+    db_notes = {r[0]: r[1] for r in cur.execute("SELECT path, file_hash FROM notes").fetchall()}
     current_paths = {p.relative_to(VAULT_DIR).as_posix() for p in md_files}
 
     # Delete removed files from DB
@@ -122,12 +122,12 @@ def main():
     note_count = link_count = 0
     for path in md_files:
         rel = path.relative_to(VAULT_DIR).as_posix()
-        stat = path.stat()
-        mtime = stat.st_mtime
+        text = path.read_text(encoding="utf-8", errors="replace")
+        file_hash = hashlib.sha256(text.encode("utf-8", errors="replace")).hexdigest()
         
-        # If file matches path and mtime in DB, skip parsing it!
+        # If file matches path and hash in DB, skip parsing it!
         # Re-normalize existing links in case destinations were renamed.
-        if rel in db_notes and db_notes[rel] == mtime:
+        if rel in db_notes and db_notes[rel] == file_hash:
             note_count += 1
             existing_links = cur.execute("SELECT raw_destination, id FROM links WHERE source = ?", (rel,)).fetchall()
             for raw, link_id in existing_links:
@@ -137,7 +137,6 @@ def main():
             continue
 
         # Otherwise parse the file
-        text = path.read_text(encoding="utf-8", errors="replace")
         fm = parse_frontmatter(text)
         title = title_from_note(path, text, fm)
         typ = fm.get("type") or "concept"
@@ -155,9 +154,9 @@ def main():
         cur.execute("DELETE FROM links WHERE source = ?", (rel,))
 
         cur.execute("""INSERT OR REPLACE INTO notes
-          (title, path, type, tags, project, status, created, updated, description, resource, timestamp, schema, mtime)
+          (title, path, type, tags, project, status, created, updated, description, resource, timestamp, schema, file_hash)
           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-          (title, rel, typ, tags, project, status, created, updated, description, resource, timestamp, schema, mtime))
+          (title, rel, typ, tags, project, status, created, updated, description, resource, timestamp, schema, file_hash))
         note_count += 1
         
         raw_links = []

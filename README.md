@@ -22,6 +22,9 @@ python scripts/update_mocs.py
 
 # Step 3: Validate the vault schema health
 python scripts/validate_schema.py
+
+# Step 4: Set up local git pre-commit hooks for schema validation
+python scripts/setup_git_hooks.py
 ```
 
 *Note: No external package installation (pip) is needed. KnowledgeOS runs purely on Python standard libraries.*
@@ -47,11 +50,15 @@ To get KnowledgeOS running, perform the following manual steps:
      python scripts/onboarding.py
      ```
    - This interactive CLI wizard will capture your heuristics, core values, and anti-goals to automatically generate your baseline profile at [People/Self.md](People/Self.md). You can also edit this file manually.
-4. **Environment Configuration (Optional Notion Sync)**:
+4. **Environment Configuration (Optional Notion Sync & Git Hooks)**:
    - If you want to use the Notion publishing bridge, create a `.env` file at `~/.hermes/.env` (on Unix/macOS) or in your `%LOCALAPPDATA%/hermes/.env` folder (on Windows) and add your integration details:
      ```env
      NOTION_API_KEY=your_secret_api_key_here
      NOTION_DATABASE_ID=your_database_or_wiki_id_here
+     ```
+   - Set up the pre-commit validation hook:
+     ```bash
+     python scripts/setup_git_hooks.py
      ```
 5. **Run System Checks**:
    - Run the alignment diagnostic tool: `python scripts/check_alignment.py`
@@ -119,6 +126,7 @@ All scripts are written in standard Python (no `pip install` required) and can b
 | `python scripts/daily_capture_report.py` | Inspect Inbox folder and suggest next organization steps. |
 | `python scripts/refinement_report.py` | Generate a report on notes missing links, tags, or metadata. |
 | `python scripts/validate_schema.py` | Validate portable metadata structures, provenance, and link health. |
+| `python scripts/setup_git_hooks.py` | Configure local Git pre-commit hooks for schema validation. |
 | `python scripts/refactor_links.py` | Automatically refactor broken paths and migrate wikilinks. |
 | `python scripts/draft_weekly_synthesis.py` | Aggregate weekly vault changes and draft a review note. |
 | `python scripts/export_bundle.py` | Bundle markdown files and assets for a project. |

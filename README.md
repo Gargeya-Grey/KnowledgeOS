@@ -112,12 +112,14 @@ All scripts are written in standard Python (no `pip install` required) and can b
 
 | Command | Purpose |
 |---|---|
+| `python scripts/doctor.py` | Run diagnostic environment and vault health checks. |
 | `python scripts/rebuild_index.py` | Scan the vault and rebuild the SQLite index (`knowledge_index.db`). |
 | `python scripts/search.py "<query>"` | Graph-aware search (evaluates titles, tags, projects, and links). |
 | `python scripts/update_mocs.py` | Rebuild and refresh all dynamic dashboards (e.g. experiments). |
 | `python scripts/daily_capture_report.py` | Inspect Inbox folder and suggest next organization steps. |
 | `python scripts/refinement_report.py` | Generate a report on notes missing links, tags, or metadata. |
 | `python scripts/validate_schema.py` | Validate portable metadata structures, provenance, and link health. |
+| `python scripts/refactor_links.py` | Automatically refactor broken paths and migrate wikilinks. |
 | `python scripts/draft_weekly_synthesis.py` | Aggregate weekly vault changes and draft a review note. |
 | `python scripts/export_bundle.py` | Bundle markdown files and assets for a project. |
 | `python scripts/publish_to_notion.py` | Sync and publish refined notes to the Notion wiki. |

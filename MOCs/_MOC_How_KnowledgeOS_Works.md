@@ -160,6 +160,7 @@ Scripts keep the vault operational:
 | Script | Use |
 |---|---|
 | `onboarding.py` | Interactive CLI wizard to initialize/configure your Ego Node (Self.md) |
+| `doctor.py` | Run diagnostic environment and vault health checks |
 | `rebuild_index.py` | Rebuilds the SQLite search/graph index |
 | `search.py` | Searches titles, tags, projects, and linked notes |
 | `weekly_data.py` | Produces weekly metrics |
@@ -169,6 +170,7 @@ Scripts keep the vault operational:
 | `update_mocs.py` | Refreshes generated dashboards |
 | `draft_weekly_synthesis.py` | Drafts a weekly synthesis |
 | `validate_schema.py` | Checks metadata/link health |
+| `refactor_links.py` | Automatically refactor broken paths and migrate wikilinks |
 | `export_bundle.py` | Exports portable markdown bundles |
 | `publish_to_notion.py` | Publishes refined notes to Notion after dry-run |
 

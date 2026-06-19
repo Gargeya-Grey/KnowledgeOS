@@ -50,6 +50,7 @@ Capture → Clarify → Connect → Commit → Execute → Review → Synthesize
 | Script | Purpose |
 |---|---|
 | `python scripts/onboarding.py` | Run the cognitive onboarding wizard |
+| `python scripts/doctor.py` | Run diagnostic environment and vault health checks |
 | `python scripts/rebuild_index.py` | Refresh SQLite index |
 | `python scripts/search.py <query>` | Search notes/tags/projects/links |
 | `python scripts/weekly_data.py` | JSON weekly summary |
@@ -59,6 +60,7 @@ Capture → Clarify → Connect → Commit → Execute → Review → Synthesize
 | `python scripts/update_mocs.py` | Refresh all generated dashboards |
 | `python scripts/draft_weekly_synthesis.py` | Draft weekly synthesis note |
 | `python scripts/validate_schema.py` | Validate metadata/provenance/link health |
+| `python scripts/refactor_links.py` | Automatically refactor broken paths and migrate wikilinks |
 | `python scripts/export_bundle.py --project "Example Project" --out exports/example-bundle` | Export portable markdown bundle |
 | `python scripts/publish_to_notion.py --dry-run <note>` | Dry-run/publish to Notion |
 

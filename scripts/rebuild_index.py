@@ -126,9 +126,14 @@ def main():
         mtime = stat.st_mtime
         
         # If file matches path and mtime in DB, skip parsing it!
+        # Re-normalize existing links in case destinations were renamed.
         if rel in db_notes and db_notes[rel] == mtime:
             note_count += 1
-            link_count += cur.execute("SELECT count(*) FROM links WHERE source = ?", (rel,)).fetchone()[0]
+            existing_links = cur.execute("SELECT raw_destination, id FROM links WHERE source = ?", (rel,)).fetchall()
+            for raw, link_id in existing_links:
+                dest = normalize_link(raw, rel, lookup)
+                cur.execute("UPDATE links SET destination = ? WHERE id = ?", (dest, link_id))
+                link_count += 1
             continue
 
         # Otherwise parse the file

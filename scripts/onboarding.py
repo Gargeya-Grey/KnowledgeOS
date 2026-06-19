@@ -5,6 +5,7 @@ Runs an interactive CLI interview to capture user heuristics, values, and anti-g
 then generates the core ego node note (People/Self.md).
 """
 import sys
+import datetime
 from pathlib import Path
 
 VAULT_DIR = Path(__file__).resolve().parent.parent
@@ -49,6 +50,7 @@ def main():
     anti2 = get_input("   - Anti-Goal 2: ")
     anti3 = get_input("   - Anti-Goal 3: ")
 
+    today = datetime.date.today().isoformat()
     # Build the Self.md content
     md_content = f"""---
 type: person
@@ -56,10 +58,10 @@ title: Self ({name})
 description: The core ego node representing {name}, operating heuristics, values, and cognitive drift over time.
 schema: knowledgeos-v0.2
 status: active
-created: 2026-06-19
-updated: 2026-06-19
+created: {today}
+updated: {today}
 tags: [ego-node, core, systems]
-timestamp: 2026-06-19T00:00:00Z
+timestamp: {today}T00:00:00Z
 ---
 
 # Self ({name})

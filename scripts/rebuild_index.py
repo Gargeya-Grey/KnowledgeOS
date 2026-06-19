@@ -86,7 +86,8 @@ def main():
       description TEXT,
       resource TEXT,
       timestamp TEXT,
-      schema TEXT
+      schema TEXT,
+      mtime REAL
     );
     CREATE TABLE IF NOT EXISTS links (
       id INTEGER PRIMARY KEY,
@@ -105,13 +106,34 @@ def main():
     for col in ["description", "resource", "timestamp", "schema"]:
         if col not in note_cols:
             cur.execute(f"ALTER TABLE notes ADD COLUMN {col} TEXT")
-    cur.execute("DELETE FROM links")
-    cur.execute("DELETE FROM notes")
+    if "mtime" not in note_cols:
+        cur.execute("ALTER TABLE notes ADD COLUMN mtime REAL")
+
+    # Load existing notes to perform incremental updates
+    db_notes = {r[0]: r[1] for r in cur.execute("SELECT path, mtime FROM notes").fetchall()}
+    current_paths = {p.relative_to(VAULT_DIR).as_posix() for p in md_files}
+
+    # Delete removed files from DB
+    for path in list(db_notes.keys()):
+        if path not in current_paths:
+            cur.execute("DELETE FROM notes WHERE path = ?", (path,))
+            cur.execute("DELETE FROM links WHERE source = ?", (path,))
+
     note_count = link_count = 0
     for path in md_files:
+        rel = path.relative_to(VAULT_DIR).as_posix()
+        stat = path.stat()
+        mtime = stat.st_mtime
+        
+        # If file matches path and mtime in DB, skip parsing it!
+        if rel in db_notes and db_notes[rel] == mtime:
+            note_count += 1
+            link_count += cur.execute("SELECT count(*) FROM links WHERE source = ?", (rel,)).fetchone()[0]
+            continue
+
+        # Otherwise parse the file
         text = path.read_text(encoding="utf-8", errors="replace")
         fm = parse_frontmatter(text)
-        rel = path.relative_to(VAULT_DIR).as_posix()
         title = title_from_note(path, text, fm)
         typ = fm.get("type") or "concept"
         status = fm.get("status") or "draft"
@@ -123,11 +145,16 @@ def main():
         resource = fm.get("resource") or ""
         timestamp = fm.get("timestamp") or ""
         schema = fm.get("schema") or ""
+
+        # Clear existing links for this source note before inserting new ones
+        cur.execute("DELETE FROM links WHERE source = ?", (rel,))
+
         cur.execute("""INSERT OR REPLACE INTO notes
-          (title, path, type, tags, project, status, created, updated, description, resource, timestamp, schema)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-          (title, rel, typ, tags, project, status, created, updated, description, resource, timestamp, schema))
+          (title, path, type, tags, project, status, created, updated, description, resource, timestamp, schema, mtime)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+          (title, rel, typ, tags, project, status, created, updated, description, resource, timestamp, schema, mtime))
         note_count += 1
+        
         raw_links = []
         for raw in WIKILINK_RE.findall(text):
             raw_links.append(raw)
